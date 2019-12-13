@@ -12,10 +12,14 @@ class _UserProfileState extends State<UserProfile> {
   Widget build(BuildContext context) {
     return new Scaffold(
       appBar: AppBar(
-        title: Center(child: Text("Aatik-tasneem")),
-        backgroundColor: Colors.blue[200],
-        elevation: .1,
-        brightness:Brightness.light,
+        elevation: 0,
+        backgroundColor: Colors.white70,
+        centerTitle: true,
+        title: Text("AATIK TASNEEM",style: TextStyle(
+            fontSize: 16.0,
+            color: Colors.black,
+            fontWeight: FontWeight.normal
+        ),),
       ),
       body: new ListView(
         children: <Widget>[
@@ -53,8 +57,8 @@ class _UserProfileState extends State<UserProfile> {
                         ),
                       ),
                     ),
-                  ],)
-                ,
+                  ],
+                ),
               ),
 
 
@@ -102,7 +106,6 @@ class _UserProfileState extends State<UserProfile> {
                             _showMoreOption(context);
                           },
                         ),
-
                       ],
                     )
                   ],
@@ -155,7 +158,8 @@ class _UserProfileState extends State<UserProfile> {
                             fontWeight: FontWeight.bold
                         ),
                         ),
-                    ],),
+                     ],
+                    ),
 
                     SizedBox(height: 10.0,),
                     Row(children: <Widget>[
@@ -169,8 +173,8 @@ class _UserProfileState extends State<UserProfile> {
                           fontSize: 18.0,
                           fontWeight: FontWeight.bold
                       ),)
-                    ],),
-
+                    ],
+                    ),
 
                     SizedBox(height: 10.0,),
                     Row(children: <Widget>[
@@ -183,10 +187,10 @@ class _UserProfileState extends State<UserProfile> {
                       Text('Dhaka',style: TextStyle(
                           fontSize: 18.0,
                           fontWeight: FontWeight.bold
-                      ),)
-                    ],),
-
-
+                      ),
+                      )
+                    ],
+                    ),
 
                     SizedBox(height: 10.0,),
                     Row(children: <Widget>[
@@ -304,20 +308,16 @@ class _UserProfileState extends State<UserProfile> {
                   ],
                 ),
               )
-
-
             ],
           )
         ],
       ),
     );
-
   }
 
 
 
   _showMoreOption(cx) {
-
     showModalBottomSheet(
       context: cx,
       builder: (BuildContext bcx) {
@@ -365,19 +365,13 @@ class _UserProfileState extends State<UserProfile> {
                   style: TextStyle(
                       fontSize: 18.0
                   ),)
-              ],),),
-
-
-
+                ],
+              ),
+            ),
           ],
         );
-
       },
-
-
     );
-
-
   }
 
 

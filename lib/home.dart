@@ -1,3 +1,4 @@
+import 'package:design/Menu.dart';
 import 'package:design/Search.dart';
 import 'package:design/profile/user.dart';
 import 'package:flutter/cupertino.dart';
@@ -185,14 +186,14 @@ class _HomePageState extends State<HomePage> {
               IconButton(icon: Icon(Icons.home), onPressed: (){
                 Navigator.push(context, MaterialPageRoute(builder: (context)=> new HomePage()));
               }),
-              IconButton(icon: Icon(Icons.person_outline), onPressed: (){
+              IconButton(icon: Icon(Icons.person_pin), onPressed: (){
                 Navigator.push(context, MaterialPageRoute(builder: (context)=> new UserProfile()));
               }),
               IconButton(icon: Icon(Icons.notifications), onPressed: (){
                 //Navigator.push(context, MaterialPageRoute(builder: (context)=> new HomeScreen()));
               }),
               IconButton(icon: Icon(Icons.menu), onPressed: (){
-                //Navigator.push(context, MaterialPageRoute(builder: (context)=> new HomeScreen()));
+                Navigator.push(context, MaterialPageRoute(builder: (context)=> new Menu()));
               })
             ],
           ),

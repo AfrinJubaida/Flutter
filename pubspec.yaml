@@ -54,6 +54,8 @@ flutter:
     - image/averie-woodard.jpg
     - image/foto-sushi.jpg
     - image/lucas-sankey.jpg
+    - image/story/product.jpeg
+    - image/story/product2.jpg
 
 
   # An image asset can refer to one or more resolution-specific "variants", see
